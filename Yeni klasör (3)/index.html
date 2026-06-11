@@ -7,7 +7,7 @@
     
     <meta name="description" content="Erzurum Kuyumcusu - Nesiller boyu güven, ömür boyu zarafet. Has altın, pırlanta ve özel tasarım sarraf ürünleri." />
     <meta property="og:title" content="ERZURUM KUYUMCUSU | Özel Dijital Sergi" />
-    <meta property="og:description" content="En seçkin 22K and 14K altın koleksiyonlarimizi keşfedin." />
+    <meta property="og:description" content="En seçkin 22K and 14K altın koleksiyonlarimizi kesfedin." />
     <meta property="og:image" content="logo.jpg" />
     <meta property="og:type" content="website" />
 
@@ -88,7 +88,6 @@
             left: 100%;
         }
 
-        /* SSS Akordeon Animasyonu */
         .faq-answer {
             max-height: 0;
             overflow: hidden;
@@ -106,7 +105,6 @@
             color: var(--gold-premium);
         }
 
-        /* WhatsApp Destek Balonu Nabiz Efekti */
         @keyframes goldPulse {
             0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4); }
             70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
@@ -115,28 +113,6 @@
         .whatsapp-float-btn {
             animation: goldPulse 2s infinite;
         }
-
-        /* Kayan yazi animasyonu */
-        @keyframes tickerMove {
-            0% { transform: translate3d(0, 0, 0); }
-            100% { transform: translate3d(-50%, 0, 0); }
-        }
-        .ticker-wrap {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .ticker-content {
-            display: inline-block;
-            padding-left: 100%;
-            animation: tickerMove 35s linear infinite;
-        }
-        .ticker-content:hover {
-            animation-play-state: paused;
-        }
-
-        .price-up { color: #10b981; transition: color 0.5s ease; }
-        .price-down { color: #ef4444; transition: color 0.5s ease; }
-        .price-stable { color: #c5a059; transition: color 0.5s ease; }
 
         ::-webkit-scrollbar {
             width: 6px;
@@ -151,17 +127,7 @@
 </head>
 <body>
 
-    <div class="w-full bg-[#11131e] border-b border-[#c5a059]/20 py-2.5 text-[11px] font-sans-clean tracking-widest fixed top-0 z-50 text-slate-300 shadow-lg select-none">
-        <div class="ticker-wrap flex items-center">
-            <div class="absolute left-0 bg-[#11131e] px-4 h-full flex items-center z-10 border-r border-[#c5a059]/10 text-[#c5a059] font-medium text-[10px]">
-                <i class="fa-solid fa-chart-line-up mr-2"></i> ERZURUM CANLI SARRAF BORSASI
-            </div>
-            <div class="ticker-content flex items-center gap-16" id="tickerContent">
-                </div>
-        </div>
-    </div>
-
-    <nav class="fixed top-[37px] w-full z-40 backdrop-blur-xl border-b border-[#c5a059]/10 bg-[#090a0f]/80 py-5 px-6 md:px-16 flex justify-between items-center">
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-xl border-b border-[#c5a059]/10 bg-[#090a0f]/80 py-5 px-6 md:px-16 flex justify-between items-center">
         <div class="flex flex-col items-center mx-auto md:mx-0">
             <span class="font-brand text-xl md:text-2xl font-bold tracking-[0.25em] text-white">ERZURUM</span>
             <span class="font-sans-clean text-[9px] tracking-[0.45em] text-[#c5a059] uppercase mt-1">Kuyumcusu</span>
@@ -186,7 +152,7 @@
         </div>
     </nav>
 
-    <div class="relative min-h-screen flex items-center justify-center pt-32 overflow-hidden bg-[radial-gradient(circle_at_center,_rgba(20,22,34,1)_0%,_rgba(9,10,15,1)_100%)]">
+    <div class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-[radial-gradient(circle_at_center,_rgba(20,22,34,1)_0%,_rgba(9,10,15,1)_100%)]">
         <div class="absolute w-[500px] h-[500px] bg-[#8c6d39]/5 rounded-full blur-[120px] -top-20 -left-20"></div>
         <div class="absolute w-[400px] h-[400px] bg-[#c5a059]/3 rounded-full blur-[100px] bottom-0 right-0"></div>
 
@@ -220,10 +186,6 @@
                 <div class="h-[1px] w-20 bg-gradient-to-r from-transparent via-[#c5a059] to-transparent mx-auto mt-5"></div>
             </div>
 
-            <div class="text-center -mt-12 mb-12 text-xs font-sans-clean tracking-widest text-[#c5a059]/80 italic">
-                <i class="fa-solid fa-arrows-rotate animate-spin mr-2"></i> Ürün fiyatları canlı altın borsası kuruna göre anlık olarak hesaplanmaktadır.
-            </div>
-
             <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             </div>
         </div>
@@ -241,7 +203,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-[#11131e] border border-slate-900 p-8 rounded-sm text-center flex flex-col justify-between">
                     <div class="text-[#c5a059] text-xs mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="font-luxury text-slate-300 italic font-light text-base leading-relaxed mb-6">"Erzurum burma bileziği siparişi verdim. İşçiliği o kadar muazzam ve ağir ki, nesilden nesile aktarılacak gerçek bir sanat eseri. Güvenilir ve çok asil bir esnaflık."</p>
+                    <p class="font-luxury text-slate-300 italic font-light text-base leading-relaxed mb-6">"Erzurum burma bileziği siparişi verdim. İşçiliği o kadar muazzam ve ağır ki, nesilden nesile aktarılacak gerçek bir sanat eseri. Güvenilir ve çok asil bir esnaflık."</p>
                     <div class="font-sans-clean text-[10px] tracking-widest text-[#c5a059] uppercase font-medium">— Şennur K.</div>
                 </div>
                 <div class="bg-[#11131e] border border-slate-900 p-8 rounded-sm text-center flex flex-col justify-between border-t-[#c5a059]/30">
@@ -376,10 +338,7 @@
                 <div class="flex flex-col justify-between">
                     <div>
                         <h2 id="modalTitle" class="font-luxury text-2xl font-normal text-white mb-2">Ürün Başlığı</h2>
-                        <div class="mb-4">
-                            <span class="block text-[8px] font-sans-clean text-[#c5a059]/70 tracking-widest uppercase mb-1">CANLI BORSA FİYATI:</span>
-                            <div id="modalPrice" class="font-sans-clean text-xl font-medium tracking-wide text-[#c5a059]">Hesaplanıyor...</div>
-                        </div>
+                        <div id="modalPrice" class="font-luxury text-base tracking-widest text-[#c5a059] mb-4">Anlık Altın Kuru ile Hesaplanır</div>
                         <div class="h-[1px] w-12 bg-[#c5a059]/30 mb-4"></div>
                         <p id="modalDesc" class="text-slate-300 text-xs italic font-light leading-relaxed mb-6">Ürün açıklaması.</p>
                         
@@ -391,7 +350,7 @@
                     </div>
                     
                     <button onclick="handleOrderSubmit()" class="w-full text-center font-sans-clean bg-gradient-to-r from-[#8c6d39] to-[#c5a059] text-[#090a0f] font-semibold py-4 text-[11px] tracking-[0.2em] hover:shadow-[0_0_20px_rgba(197,160,89,0.2)] transition-all duration-350">
-                        <i class="fa-brands fa-whatsapp mr-2 text-sm"></i>ANLIK FİYATLA SİPARİŞ ET
+                        <i class="fa-brands fa-whatsapp mr-2 text-sm"></i>ANLIK KUR TEKLİFİ AL
                     </button>
                 </div>
             </div>
@@ -408,7 +367,7 @@
             </a>
         </div>
         <div class="text-[9px] text-slate-600 font-sans-clean tracking-[0.3em] space-y-2 leading-loose">
-            <div>&copy; 2026 ERZURUM KUYUMCUSU. HAUTE JOAILLERIE.</div>
+            <div>&copy; 2026 ERZURUM... HAUTE JOAILLERIE.</div>
             <div class="text-slate-700 text-[8px]">NESİLLER BOYU GÜVEN, ÖMÜR BOYU ZARAFET. TÜM HAKLARI SAKLIDIR.</div>
         </div>
     </footer>
@@ -426,15 +385,6 @@
     <script>
         const KENDI_TELEFONUM = "905307755230"; 
 
-        // CANLI ALTIN TEMEL KUR BİLGİLERİ (Borsa Tabanı)
-        let altinKurlari = {
-            gram: { isim: "GRAM ALTIN", fiyat: 3120.45, tip: "has", yon: "stable" },
-            k22: { isim: "22 AYAR ALTIN", fiyat: 2895.80, tip: "has", yon: "stable" },
-            k14: { isim: "14 AYAR ALTIN", fiyat: 1845.20, tip: "modern", yon: "stable" },
-            ceyrek: { isim: "ÇEYREK ALTIN", fiyat: 5180.00, tip: "has", yon: "stable" }
-        };
-
-        // ÜRÜNLERİN GRAM AĞIRLIKLARI VE ATÖLYE İŞÇİLİK KATSAYILARI (Dinamik Hesaplama İçin)
         const urunler = {
             besiBirYerde: {
                 title: "Geleneksel Beşi Bir Yerde Ziynet",
@@ -442,10 +392,7 @@
                 img: "besi_bir_yerde.jpg",
                 tag: "22 Ayar Sarraf Klasikleri",
                 type: "diger",
-                options: ["Standart Ölçü"],
-                kurTipi: "k22",
-                gramAginlik: 36.00,
-                iscilikCarpani: 1.05
+                options: ["Standart Ölçü"]
             },
             kelepce22k: {
                 title: "22K El İşçiliği Premium Kelepçe",
@@ -453,10 +400,7 @@
                 img: "22k_kelepce.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"],
-                kurTipi: "k22",
-                gramAginlik: 24.50,
-                iscilikCarpani: 1.12
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"]
             },
             cerceve22k: {
                 title: "22K Lüks Altın Çerçeve Kolye",
@@ -464,10 +408,7 @@
                 img: "22k_cerceve.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "diger",
-                options: ["Standart Ebat"],
-                kurTipi: "k22",
-                gramAginlik: 12.20,
-                iscilikCarpani: 1.15
+                options: ["Standart Ebat"]
             },
             sansKolye14k: {
                 title: "14K İtalyan Şans Kolyesi",
@@ -475,10 +416,7 @@
                 img: "14k_sans_kolye.jpg",
                 tag: "14 Ayar Modern Tasarım",
                 type: "diger",
-                options: ["45 cm", "50 cm"],
-                kurTipi: "k14",
-                gramAginlik: 4.80,
-                iscilikCarpani: 1.35
+                options: ["45 cm", "50 cm"]
             },
             kelepce14k: {
                 title: "14K Minimalist Trend Kelepçe",
@@ -486,10 +424,7 @@
                 img: "14k_kelepce.jpg",
                 tag: "14 Ayar Modern Tasarım",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap"],
-                kurTipi: "k14",
-                gramAginlik: 8.40,
-                iscilikCarpani: 1.28
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap"]
             },
             cerceve14k: {
                 title: "14K Modern Baget Çerçeve Kolye",
@@ -497,10 +432,7 @@
                 img: "14k_cerceve.jpg",
                 tag: "14 Ayar Modern Tasarım",
                 type: "diger",
-                options: ["Standart Ebat"],
-                kurTipi: "k14",
-                gramAginlik: 6.10,
-                iscilikCarpani: 1.30
+                options: ["Standart Ebat"]
             },
             burmaBilezik: {
                 title: "22K Erzurum Burma Bilezik",
@@ -508,21 +440,15 @@
                 img: "22k_burma_bilezik.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap", "6.6 Çap"],
-                kurTipi: "k22",
-                gramAginlik: 30.00,
-                iscilikCarpani: 1.07
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap", "6.6 Çap"]
             },
             basakBilezik: {
                 title: "22K Başak Model Kelepçe",
-                desc: "Bereketi simgeleyen başak motiflerinin kusursuz altın işçiliği ve emniyet kilit sistemiyle uyumu.",
+                desc: "Bereketi simgeleyen başak motiflerinin kusursuz altın işçiliği va emniyet kilit sistemiyle uyumu.",
                 img: "22k_basak.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"],
-                kurTipi: "k22",
-                gramAginlik: 18.50,
-                iscilikCarpani: 1.10
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"]
             },
             ajdaBilezik: {
                 title: "22K Klasik Ajda Bilezik",
@@ -530,10 +456,7 @@
                 img: "22k_ajda_bilezik.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap", "6.6 Çap"],
-                kurTipi: "k22",
-                gramAginlik: 10.00,
-                iscilikCarpani: 1.06
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap", "6.6 Çap"]
             },
             ajdaZikzak: {
                 title: "22K Zikzak Desen Ajda Bilezik",
@@ -541,10 +464,7 @@
                 img: "22k_ajda_zikzak.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "bilezik",
-                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"],
-                kurTipi: "k22",
-                gramAginlik: 11.50,
-                iscilikCarpani: 1.09
+                options: ["5.8 Çap", "6.0 Çap", "6.2 Çap", "6.4 Çap"]
             },
             halatZincir: {
                 title: "22K İtalyan Halat Zincir",
@@ -552,10 +472,7 @@
                 img: "22k_halat_zincir.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "diger",
-                options: ["50 cm", "55 cm", "60 cm"],
-                kurTipi: "k22",
-                gramAginlik: 15.80,
-                iscilikCarpani: 1.14
+                options: ["50 cm", "55 cm", "60 cm"]
             },
             tektas22k: {
                 title: "22K Sarraf İşi Tektaş Yüzük",
@@ -563,10 +480,7 @@
                 img: "22k_tektas_yuzuk.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "yuzuk",
-                options: ["11 No", "13 No", "15 No", "17 No", "19 No"],
-                kurTipi: "k22",
-                gramAginlik: 5.20,
-                iscilikCarpani: 1.20
+                options: ["11 No", "13 No", "15 No", "17 No", "19 No"]
             },
             tektas14k: {
                 title: "14K Işıltılı Tektaş Yüzük",
@@ -574,10 +488,7 @@
                 img: "14k_tektas_yuzuk.jpg",
                 tag: "14 Ayar Modern Koleksiyon",
                 type: "yuzuk",
-                options: ["11 No", "13 No", "15 No", "17 No", "19 No"],
-                kurTipi: "k14",
-                gramAginlik: 3.10,
-                iscilikCarpani: 1.40
+                options: ["11 No", "13 No", "15 No", "17 No", "19 No"]
             },
             set22k: {
                 title: "22K Görkemli Sarraf Seti",
@@ -585,10 +496,7 @@
                 img: "22k_set.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "diger",
-                options: ["Standart Ölçü"],
-                kurTipi: "k22",
-                gramAginlik: 48.00,
-                iscilikCarpani: 1.15
+                options: ["Standart Ölçü"]
             },
             alyans22k: {
                 title: "22K Klasik Sarraf Alyansı",
@@ -596,10 +504,7 @@
                 img: "22k_alyans.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "yuzuk",
-                options: ["12 No", "14 No", "16 No", "18 No", "20 No", "22 No"],
-                kurTipi: "k22",
-                gramAginlik: 6.50,
-                iscilikCarpani: 1.18
+                options: ["12 No", "14 No", "16 No", "18 No", "20 No", "22 No"]
             },
             burmaYuzuk22k: {
                 title: "22K Erzurum Burma Yüzük",
@@ -607,10 +512,7 @@
                 img: "22k_burma_yuzuk.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "yuzuk",
-                options: ["12 No", "14 No", "16 No", "18 No", "20 No"],
-                kurTipi: "k22",
-                gramAginlik: 4.90,
-                iscilikCarpani: 1.22
+                options: ["12 No", "14 No", "16 No", "18 No", "20 No"]
             },
             kolyeUcu22k: {
                 title: "22K Telkari İşçilik Kolye Ucu",
@@ -618,10 +520,7 @@
                 img: "22k_kolye_ucu.jpg",
                 tag: "22 Ayar Has Altın",
                 type: "diger",
-                options: ["Standart Ebat"],
-                kurTipi: "k22",
-                gramAginlik: 7.30,
-                iscilikCarpani: 1.25
+                options: ["Standart Ebat"]
             },
             alyans14k: {
                 title: "14K Modern Tasarım Alyans",
@@ -629,10 +528,7 @@
                 img: "14k_alyans.jpg",
                 tag: "14 Ayar Modern Tasarım",
                 type: "yuzuk",
-                options: ["12 No", "14 No", "16 No", "18 No", "20 No"],
-                kurTipi: "k14",
-                gramAginlik: 4.20,
-                iscilikCarpani: 1.38
+                options: ["12 No", "14 No", "16 No", "18 No", "20 No"]
             },
             set14k: {
                 title: "14K Modern Tasarım Set",
@@ -640,120 +536,41 @@
                 img: "14k_set.jpg",
                 tag: "14 Ayar Modern Koleksiyon",
                 type: "diger",
-                options: ["Standart Ölçü"],
-                kurTipi: "k14",
-                gramAginlik: 16.50,
-                iscilikCarpani: 1.32
+                options: ["Standart Ölçü"]
             }
         };
 
         let aktifUrun = null;
         let secilenOlcu = "";
-        let aktifUrunAnahtari = "";
 
-        // Para Formatlama Fonksiyonu
-        function formatTRY(deger) {
-            return new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' }).format(deger);
-        }
-
-        // Borsa Şeridini (Ticker) Güncelleyen Fonksiyon
-        function borsaSeridiniGuncelle() {
-            const ticker = document.getElementById('tickerContent');
-            let icerik = "";
-            
-            // Çift yazdiriyoruz ki kayma esnasında sonsuz döngü kesilmesin
-            for(let i = 0; i < 2; i++) {
-                Object.keys(altinKurlari).forEach(key => {
-                    const kur = altinKurlari[key];
-                    let ok = "●";
-                    let renkSinifi = "price-stable";
-                    
-                    if(kur.yon === "up") { ok = "▲"; renkSinifi = "price-up"; }
-                    else if(kur.yon === "down") { ok = "▼"; renkSinifi = "price-down"; }
-                    
-                    icerik += `<span class="inline-flex items-center gap-2 font-medium">
-                        <span class="text-white">${kur.isim}:</span> 
-                        <span class="${renkSinifi}">${formatTRY(kur.fiyat)} ${ok}</span>
-                    </span>`;
-                });
-            }
-            ticker.innerHTML = icerik;
-        }
-
-        // Ürün Fiyatını Hesaplayan Fonksiyon
-        function urunFiyatiHesapla(u) {
-            const anaKur = altinKurlari[u.kurTipi].fiyat;
-            return u.gramAginlik * anaKur * u.iscilikCarpani;
-        }
-
-        // Vitrini ve Kartları Oluşturan/Güncelleyen Fonksiyon
         function vitrinOlustur() {
             const grid = document.getElementById('product-grid');
+            grid.innerHTML = "";
             
-            // Eğer grid boşsa (ilk yükleme) sıfırdan oluştur, doluysa sadece fiyat alanlarını güncelle
-            if(grid.children.length === 0) {
-                grid.innerHTML = "";
-                Object.keys(urunler).forEach(key => {
-                    const u = urunler[key];
-                    const sonFiyat = urunFiyatiHesapla(u);
-                    
-                    const card = document.createElement('div');
-                    card.className = "gold-halo-card bg-[#11131e] border border-slate-900/60 rounded-sm overflow-hidden flex flex-col h-full";
-                    card.id = `card-${key}`;
-                    card.innerHTML = `
-                        <div onclick="openQuickView('${key}')" class="relative aspect-square bg-[#090a0f] overflow-hidden p-8 flex items-center justify-center cursor-pointer">
-                            <img src="${u.img}" alt="${u.title}" class="w-full h-full object-contain transition-transform duration-[1.5s] ease-out hover:scale-105" />
+            Object.keys(urunler).forEach(key => {
+                const u = urunler[key];
+                const card = document.createElement('div');
+                card.className = "gold-halo-card bg-[#11131e] border border-slate-900/60 rounded-sm overflow-hidden flex flex-col h-full";
+                card.innerHTML = `
+                    <div onclick="openQuickView('${key}')" class="relative aspect-square bg-[#090a0f] overflow-hidden p-8 flex items-center justify-center cursor-pointer">
+                        <img src="${u.img}" alt="${u.title}" class="w-full h-full object-contain transition-transform duration-[1.5s] ease-out hover:scale-105" />
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow border-t border-slate-900/40 text-center">
+                        <span class="font-sans-clean text-[9px] tracking-[0.3em] text-[#c5a059] mb-2 uppercase">${u.tag}</span>
+                        <h3 class="font-luxury text-xl font-medium tracking-wide text-slate-200 mb-3">${u.title}</h3>
+                        <p class="text-slate-400 text-xs italic font-light line-clamp-2 mb-6 flex-grow">${u.desc}</p>
+                        <div class="flex flex-col items-center pt-4 border-t border-slate-900/40 mt-auto">
+                            <span class="font-luxury text-sm tracking-widest text-[#c5a059] mb-3">Fiyat Teklifi Alınız</span>
+                            <button onclick="openQuickView('${key}')" class="btn-luxury-blend w-full font-sans-clean border border-[#c5a059]/20 text-[#c5a059] py-2.5 text-[10px] tracking-[0.2em] hover:bg-[#c5a059] hover:text-[#090a0f] transition-all duration-300">DETAYLAR</button>
                         </div>
-                        <div class="p-8 flex flex-col flex-grow border-t border-slate-900/40 text-center">
-                            <span class="font-sans-clean text-[9px] tracking-[0.3em] text-[#c5a059] mb-2 uppercase">${u.tag}</span>
-                            <h3 class="font-luxury text-xl font-medium tracking-wide text-slate-200 mb-3">${u.title}</h3>
-                            <p class="text-slate-400 text-xs italic font-light line-clamp-2 mb-6 flex-grow">${u.desc}</p>
-                            <div class="flex flex-col items-center pt-4 border-t border-slate-900/40 mt-auto">
-                                <span class="font-sans-clean text-lg tracking-wide text-[#c5a059] mb-3 font-medium display-price">${formatTRY(sonFiyat)}</span>
-                                <button onclick="openQuickView('${key}')" class="btn-luxury-blend w-full font-sans-clean border border-[#c5a059]/20 text-[#c5a059] py-2.5 text-[10px] tracking-[0.2em] hover:bg-[#c5a059] hover:text-[#090a0f] transition-all duration-300">İNCELE & SİPARİŞ ET</button>
-                            </div>
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                });
-            } else {
-                // Sadece fiyat etiketlerini güncelle
-                Object.keys(urunler).forEach(key => {
-                    const u = urunler[key];
-                    const sonFiyat = urunFiyatiHesapla(u);
-                    const card = document.getElementById(`card-${key}`);
-                    if(card) {
-                        card.querySelector('.display-price').innerText = formatTRY(sonFiyat);
-                    }
-                });
-            }
-
-            // Eğer modal şu an açıksa, modalın içindeki fiyatı da eş zamanlı güncelle
-            if(aktifUrun) {
-                const guncelModalFiyat = urunFiyatiHesapla(aktifUrun);
-                document.getElementById('modalPrice').innerText = formatTRY(guncelModalFiyat);
-            }
-
-            // Genel WhatsApp Balonu Linkini Ayarla
-            const temizNumara = KENDI_TELEFONUM.replace(/\D/g, '');
-            const genelMesaj = "Mücevher Danışmanı Yetkilisine,\n\nERZURUM KUYUMCUSU Dijital Vitrin sayfanız üzerinden ulaşıyorum. Canlı altın borsası kurlarınız, güncel takı fiyatlandırmaları ve mağazanız hakkında detaylı bilgi alabilir miyim?";
-            document.getElementById('whatsappFloatingBubble').href = `https://wa.me/${temizNumara}?text=${encodeURIComponent(genelMesaj)}`;
-        }
-
-        // CANLI BORSA SİMÜLASYONU (4 Saniyede Bir Fiyatları Küçük Oranlarda Değiştirir)
-        function canliBorsaSimulasyonu() {
-            Object.keys(altinKurlari).forEach(key => {
-                const degisimOrani = (Math.random() * 0.4 - 0.2); // -%0.2 ile +%0.2 arası küçük dalgalanma
-                const eskiFiyat = altinKurlari[key].fiyat;
-                altinKurlari[key].fiyat += altinKurlari[key].fiyat * (degisimOrani / 100);
-                
-                if(altinKurlari[key].fiyat > eskiFiyat) altinKurlari[key].yon = "up";
-                else if(altinKurlari[key].fiyat < eskiFiyat) altinKurlari[key].yon = "down";
-                else altinKurlari[key].yon = "stable";
+                    </div>
+                `;
+                grid.appendChild(card);
             });
-            
-            borsaSeridiniGuncelle();
-            vitrinOlustur();
+
+            const temizNumara = KENDI_TELEFONUM.replace(/\D/g, '');
+            const genelMesaj = "Mücevher Danışmanı Yetkilisine,\n\nERZURUM KUYUMCUSU Dijital Vitrin sayfanız üzerinden ulaşıyorum. Ürünler, güncel altın kuru fiyatlandırmaları ve mağazanız hakkında detaylı bilgi alabilir miyim?";
+            document.getElementById('whatsappFloatingBubble').href = `https://wa.me/${temizNumara}?text=${encodeURIComponent(genelMesaj)}`;
         }
 
         function scrollToSection(id) {
@@ -761,7 +578,6 @@
         }
 
         function openQuickView(key) {
-            aktifUrunAnahtari = key;
             aktifUrun = urunler[key];
             secilenOlcu = "";
             
@@ -769,9 +585,6 @@
             document.getElementById('modalDesc').innerText = aktifUrun.desc;
             document.getElementById('modalImg').src = aktifUrun.img;
             document.getElementById('sizeWarning').classList.add('hidden');
-
-            const guncelFiyat = urunFiyatiHesapla(aktifUrun);
-            document.getElementById('modalPrice').innerText = formatTRY(guncelFiyat);
 
             const typeLabel = document.getElementById('typeLabel');
             if(aktifUrun.type === "bilezik") typeLabel.innerText = "BİLEZİK ÇAPI / BOYUTU:";
@@ -805,8 +618,6 @@
             document.getElementById('quickViewModal').classList.remove('flex');
             document.getElementById('quickViewModal').classList.add('hidden');
             document.body.style.overflow = 'auto';
-            aktifUrun = null;
-            aktifUrunAnahtari = "";
         }
 
         function closeModalOnOutside(event) {
@@ -824,9 +635,8 @@
             let temizNumara = KENDI_TELEFONUM.replace(/\D/g, '');
             const siteUrl = window.location.origin;
             const gorselLinki = siteUrl + "/" + encodeURIComponent(aktifUrun.img);
-            const siparisAnindakiFiyat = formatTRY(urunFiyatiHesapla(aktifUrun));
 
-            const mesaj = `Mücevher Danışmanı Yetkilisine,\n\nERZURUM KUYUMCUSU Dijital Vitrininizden şu model ürünü ekranda gördüğüm anlık borsa fiyatı ile sipariş etmek / rezerve etmek istiyorum:\n\nModel: ${aktifUrun.title}\nSeçilen Ölçü: ${secilenOlcu}\nSipariş Anındaki Canlı Fiyat: ${siparisAnindakiFiyat}\n\nÜrün Görseli: ${gorselLinki}`;
+            const mesaj = `Mücevher Danışmanı Yetkilisine,\n\nERZURUM KUYUMCUSU Dijital Vitrin sayfanız üzerinden şu model hakkında detaylı bilgi ve güncel anlık altın kuru fiyat teklifi almak istiyorum:\n\nModel: ${aktifUrun.title}\nSeçilen Ölçü: ${secilenOlcu}\n\nÜrün Görseli: ${gorselLinki}`;
             const whatsappUrl = `https://wa.me/${temizNumara}?text=${encodeURIComponent(mesaj)}`;
             window.open(whatsappUrl, '_blank');
         }
@@ -841,13 +651,7 @@
             }
         }
 
-        // İlk Yükleme Komutları
-        window.onload = function() {
-            borsaSeridiniGuncelle();
-            vitrinOlustur();
-            // Her 4 saniyede bir borsayı canli olarak sarsıyoruz (Müşteri canli izleyebiliyor)
-            setInterval(canliBorsaSimulasyonu, 4000);
-        };
+        window.onload = vitrinOlustur;
     </script>
 </body>
 </html>
